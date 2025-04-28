@@ -119,7 +119,31 @@
 // var res = age >= 18 ? 'having vote' : 'not having vote'
 // console.log(res)
 
-// Logical operators 
+// Logical operators
+
+// var income = true
+
+// var cibil = false
+
+// var address = false
+
+// var iciciCC = income && cibil && address
+// var rblCC = income || cibil && address
+
+// console.log(rblCC)
+
+// var x = true
+
+// console.log(x)
+
+// var y = !x
+
+// console.log(y)
+
+// var z = !y
+
+// console.log(z)
+
 
 
 
