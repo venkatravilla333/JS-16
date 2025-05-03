@@ -156,61 +156,140 @@
 // console.log(i)
 
 
-console.log(a)
-// let a = 'sachin'
-console.log(a)
-console.log(b)
-var b = 40
-console.log(b)
+// console.log(a)
+// // let a = 'sachin'
+// console.log(a)
+// console.log(b)
+// var b = 40
+// console.log(b)
 
-console.log(c)
-var c = true
-console.log(c)
+// console.log(c)
+// var c = true
+// console.log(c)
 
-console.log(d)
-var d 
-console.log(d)
+// console.log(d)
+// var d
+// console.log(d)
 
-console.log(e)
-var e = null
-console.log(e)
+// console.log(e)
+// var e = null
+// console.log(e)
 
-console.log(f)
-var f = { name: 'kohli' }
-console.log(f)
+// console.log(f)
+// var f = { name: 'kohli' }
+// console.log(f)
 
-console.log(g)
-var g = [1, 2, 3]
-console.log(g)
+// console.log(g)
+// var g = [1, 2, 3]
+// console.log(g)
 
-console.log(h)
-var h = function test() {
-  console.log('named')
-}
-// h()
-console.log(h)
+// console.log(h)
+// var h = function test() {
+//   console.log('named')
+// }
+// // h()
+// console.log(h)
 
-console.log(i)
-// i()
-var i = function () {
-  console.log('ananymous')
-}
-// i()
-console.log(i)
+// console.log(i)
+// // i()
+// var i = function () {
+//   console.log('ananymous')
+// }
+// // i()
+// console.log(i)
 
-console.log(j)
-var j = () => {
-  console.log('arrow')
-}
+// console.log(j)
+// var j = () => {
+//   console.log('arrow')
+// }
 // j()
-console.log(j)
+// console.log(j)
 
-console.log(declare)
-function declare() {
-  console.log('Declare')
+// console.log(declare)
+// function declare() {
+//   console.log('Declare')
+// }
+// declare()
+// console.log(declare)
+
+
+// var vs let const
+
+//scope
+
+//hoisting
+
+//redeclaration
+
+// var a = 10
+// let a = 10
+// const a = 10
+
+// console.log(a)
+// console.log(a)
+// console.log(a)
+
+// let a = 20
+
+// console.log(a)
+// console.log(a)
+// console.log(a)
+
+//re-assignment
+
+// var a = 10
+// let a = 10
+// const a = 10
+// console.log(a)
+
+// a = 20
+// console.log(a)
+
+//initialisation
+
+// var a
+// let a
+// const a = 10
+// console.log(a)
+
+
+// var x = 1
+
+// function test() {
+//   // console.log(x)
+//   x = 10
+//   console.log(x)
+// }
+// test()
+// console.log(x)
+
+// {
+//   const x = 10
+//   console.log(x)
+// }
+// console.log(x)
+
+
+//closure
+
+function outer() {
+  var x = 100
+  return function inner() {
+    console.log(x)
+  }
 }
-declare()
-console.log(declare)
+
+var inner = outer()
+inner()
+
+
+
+
+
+
+
+
+
 
 
 
