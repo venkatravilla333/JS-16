@@ -272,15 +272,143 @@
 
 //closure
 
-function outer() {
-  var x = 100
-  return function inner() {
-    console.log(x)
-  }
-}
+// function outer() {
+//   var x = 100
+//   return function inner() {
+//     console.log(x)
+//   }
+// }
 
-var inner = outer()
-inner()
+// var inner = outer()
+// inner()
+
+//IIFE (ES-5)
+
+// (()=> {
+//   var a = 10
+//   function test() {
+//     var b = 20
+//   }
+//   test()
+// })()
+// console.log(a)
+
+//Without function currying
+
+// function sum(a, b, c) {
+//   let sumValue = a + b + c
+//   console.log(sumValue)
+// }
+// sum(10, 20, 30)
+
+//with curry
+
+// function fun1(a) {
+//   return function fun2(b) {
+//     return function fun3(c) {
+//       var sumValue = a + b + c
+//       console.log(sumValue)
+//     }
+//   }
+// }
+// fun1(10)(20)(30)
+
+//without curry
+
+// function calDis(price, dis) {
+  //   var disAmout = price * dis
+  //   console.log(disAmout)
+// }
+
+// calDis(1000, .1)
+// calDis(1000, .2)
+// calDis(1000, .3)
+// calDis(1000, .4)
+// calDis(1000, .5)
+
+//with curry
+
+// function calPrice(price) {
+//   return function calDis(dis) {
+//     var disAmout = price * dis
+//     console.log(disAmout)
+//   }
+// }
+
+// let calDis = calPrice(1000)
+// calDis(.1)
+// calDis(.2)
+// calDis(.3)
+// calDis(.4)
+// calDis(.5)
+
+//first class fuction
+
+// var x = function (fun) {
+//   console.log(fun)
+//   return ()=>{}
+//  }
+
+// x(()=>{})
+
+//HOF
+
+// function hof(cb) {
+//   console.log('hof')
+//   cb()
+//   return function inner() {
+//     console.log('inner')
+//   }
+// }
+
+// let inner = hof(function cb() {
+//   console.log('cb')
+// })
+
+// inner()
+
+//pure vs impure
+
+// function pure(a,b,c) {
+//   console.log(a + b + c)
+  
+// }
+
+// pure(1, 2, 3)
+
+// function impure(a, b, c) {
+//   var d = Math.random()*100
+//   console.log(a + b + c + d)
+  
+// }
+
+// impure(1, 2, 3)
+
+
+// function factorial(n) {
+//   if (n <= 0) {
+//     return 1;
+//   } else {
+//     console.log(n)
+//     return n * factorial(n - 1);
+//   }
+// }
+
+// let result = factorial(5);
+// console.log(result);
+
+
+// callback
+
+// function test(cb) {
+//   cb()
+// }
+
+// test(()=>{})
+
+
+
+
 
 
 
