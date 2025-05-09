@@ -79,14 +79,14 @@
 
 //Objects are dynamic
 
-let person = {
-  name: 'sachin',
-  age: 40,
-  address: { city: 'mumbai', road: 101 },
-  play: function () {
-    console.log('play')
-  }
-}
+// let person = {
+//   name: 'sachin',
+//   age: 40,
+//   address: { city: 'mumbai', road: 101 },
+//   play: function () {
+//     console.log('play')
+//   }
+// }
 
 
 //How to read object keys
@@ -164,6 +164,116 @@ let person = {
 
 // console.log(a)
 // console.log(b)
+
+//Reference (Objects)
+
+// import lodash from 'lodash'
+
+// let lodash = require('lodash')
+
+var originalObj = {
+  name: 'sachin',
+  address: { road: 101 },
+  play: () => {
+    console.log('play')
+  }
+}
+// var copiedObj = originalObj //normal copy
+// var copiedObj = JSON.parse(JSON.stringify(originalObj)) //deep copy
+// var copiedObj = lodash.cloneDeep(originalObj) //deep copy
+// var copiedObj = Object.assign({}, originalObj) //shallow copy (ES-5)
+// var copiedObj =  {...originalObj} //shallow copy (ES-6)
+
+// copiedObj.name = 'kohli'
+// copiedObj.address.road = 201
+
+// console.log('original obj', originalObj)
+// console.log('copied obj',copiedObj)
+
+//Math object
+
+// console.log(window.Math)
+
+// console.log(Math.min(3,6,2))
+// console.log(Math.max(3,6,2))
+// console.log(Math.floor(10.9))
+// console.log(Math.ceil(10.1))
+// console.log(Math.round(10.1))
+// console.log(Math.round(10.5))
+// console.log(Math.round(10.4))
+// console.log(Math.random()*100)
+// console.log(Math.sqrt(25))
+
+//Date object
+
+// let now = new Date()
+// console.log(now)
+
+// get
+
+// console.log(now.getFullYear())
+// console.log(now.getDate())
+// console.log(now.getHours())
+// console.log(now.getDay())
+// console.log(now.getMonth())
+// console.log(now.getMinutes())
+
+//set
+
+// now.setFullYear(2030)
+// now.setMonth(6)
+// now.setHours(6)
+// now.setHours(6)
+
+// console.log(now)
+
+//number
+
+// let date1 = new Date(2020, 6, 10, 9, 10, 20)
+// console.log(date1)
+
+// // get
+// console.log(date1.getFullYear())
+// console.log(date1.getDate())
+// console.log(date1.getHours())
+// console.log(date1.getDay())
+// console.log(date1.getMonth())
+// console.log(date1.getMinutes())
+
+
+// //set
+
+// date1.setFullYear(2030)
+// date1.setMonth(6)
+// date1.setHours(6)
+// date1.setHours(6)
+// console.log(date1)
+
+//string
+
+// let date2 = new Date('jan 10 2040 9:20:40')
+
+// console.log(date2)
+
+// get
+// console.log(date2.getFullYear())
+// console.log(date2.getDate())
+// console.log(date2.getHours())
+// console.log(date2.getDay())
+// console.log(date2.getMonth())
+// console.log(date2.getMinutes())
+
+
+//set
+
+// date2.setFullYear(2030)
+// date2.setMonth(6)
+// date2.setHours(6)
+// date2.setHours(6)
+// console.log(date2)
+
+
+
 
 
 
