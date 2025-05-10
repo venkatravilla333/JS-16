@@ -272,6 +272,95 @@ var originalObj = {
 // date2.setHours(6)
 // console.log(date2)
 
+//Template string (ES-6)
+
+//without template string
+
+// var name = 'sachin'
+
+// var age = 40
+
+// console.log('Hi this is' + ' ' + name + ' ' + 'my age is ' + age )
+
+// //with template string
+// console.log(`Hi this is ${name} my age is ${age}`)
+
+
+//String object
+
+// var str = 'HI how are you'
+// console.log(str)
+// console.log(str)
+
+//length
+
+// console.log(str.length)
+
+//how to remove extra spaces in string
+
+// console.log(str.trimStart().length)
+// console.log(str.trimEnd().length)
+// console.log(str.trim().length)
+
+//how to copy or extract a part of string
+
+// console.log(str)
+// let myStr = str.slice(0)
+// let myStr = str.slice(1)
+// let myStr = str.slice(-3)
+// let myStr = str.substring(-3)
+// console.log(myStr)
+
+//how to copy or extract a string character
+
+// console.log(str.charAt(0))
+// console.log(str.charCodeAt(0))
+
+//case convertion
+
+// console.log(str.toUpperCase())
+// console.log(str.toLowerCase())
+
+// how to add new string to existing string
+
+// console.log(str.concat(' kohli'))
+
+//How to replace existing string with new string
+
+// console.log(str.replace('you', 'me'))
+
+//how to convert string to array
+
+// console.log(str.split(' '))
+
+//How to add or pad new string to start and end of string (ES-11)
+
+// var str = 'Hi'
+
+// console.log(str.padStart(5, 20))
+// console.log(str.padEnd(5, 20))
+
+//How to find specific string
+
+// var str = 'hi how are you hi bye hi'
+
+// console.log(str.indexOf('hi'))
+// console.log(str.indexOf('hello'))
+// console.log(str.lastIndexOf('hi'))
+// console.log(str.lastIndexOf('hello'))
+// console.log(str.includes('hi'))
+// console.log(str.includes('hello'))
+// console.log(str.startsWith('hi'))
+// console.log(str.startsWith('hello'))
+// console.log(str.endsWith('hi'))
+// console.log(str.endsWith('hello'))
+
+//how to repeat string
+
+// var str = 'hello'
+
+// console.log(str.repeat(5))
+
 
 
 
