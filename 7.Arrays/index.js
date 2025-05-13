@@ -124,6 +124,164 @@
 // var arr4 = [...arr3, ...arr1, ...arr2 ]
 // console.log(arr4)
 
+//copy or clone
+
+// var originalArr = ['sachin', { road: 101 }, function play() { }]
+
+
+// var copiedArr = originalArr // normal copy
+// var copiedArr = JSON.parse(JSON.stringify(originalArr)) // deep copy
+// var copiedArr = Object.assign([], originalArr) // shallow copy (ES-5)
+// var copiedArr = originalArr.slice() // shallow copy (ES-5)
+// var copiedArr = [...originalArr] // shallow copy (ES-6)
+
+// copiedArr[0] = 'kohli'
+// copiedArr[1].road = 201
+
+// console.log(originalArr)
+// console.log(copiedArr)
+
+
+//How to loop array
+
+// var arr = [1, 2, 3, 4, 5]
+
+
+//without using loop
+
+// console.log(arr[0])
+// console.log(arr[1])
+// console.log(arr[2])
+// console.log(arr[3])
+// console.log(arr[4])
+
+//for of loop (ES-6)
+
+// for (var value of arr) {
+  //   console.log(value)
+  // }
+  
+  //forEach
+  
+  // var res = arr.forEach((v, i) => {
+    //   // console.log(v, i)
+    //   return v
+    // })
+    
+    // console.log(res)
+    
+
+    //Map method
+    
+// var arr = [1, 2, 3, 4, 5]
+
+// console.log(arr)
+    
+// let mapRes = arr.map((item) => {
+//   return item*100
+// })
+
+// console.log(mapRes)
+    
+// let forEachRes = arr.forEach((item) => {
+//   return item*100
+// })
+
+// console.log(forEachRes)
+
+
+//filter
+
+// var arr = [1, 2, 3, 4, 5]
+// console.log(arr)
+
+
+// var filteredRes = arr.filter((item) => {
+  //   return item >5
+// })
+  
+// var persons = [{ name: 'sachin', age: 40 }, { name: 'kohli', age: 30 }, { name: 'gill', age: 24 }]
+
+// console.log(persons)
+
+// var filteredRes = persons.filter((person) => {
+//     return person.age <=30
+// })
+  
+// console.log(filteredRes)
+
+//reduce method
+
+// var arr = [1, 2, 3, 4, 5]
+
+// var reduceRes = arr.reduce((cum, cur) => {
+//   console.log(cum, cur)
+//   return cum+cur
+// }, 0)
+
+// console.log(reduceRes)
+
+
+//Flattening of array
+
+// var arr = [1, 2, [10, 20, [100, 200]]]
+
+// console.log(arr)
+
+//flat
+
+// var flattenArr = arr.flat(Infinity)
+// console.log(flattenArr)
+
+// var flattenArr = []
+
+// function flattenFun(arr) {
+//   // console.log(arr)
+//   for (var value of arr) {
+//     console.log(value)
+//     if (Array.isArray(value)) {
+//       flattenFun(value)
+//     } else {
+//       flattenArr.push(value)
+//     }
+//   }
+
+// }
+// flattenFun(arr)
+
+// console.log(flattenArr)
+
+
+//How to remove duplicate values from array
+
+var arr = [1, 2, 3, 4, 5, 3, 7, 3]
+// console.log(arr)
+// var uniqueArr = [...new Set(arr)]
+// console.log(uniqueArr)
+
+var uniqueArr = []
+function removeDuplicate(arr) {
+  console.log(arr)
+  for (var value of arr) {
+    if (uniqueArr.indexOf(value) === -1) {
+      uniqueArr.push(value)
+    }
+  }
+}
+
+removeDuplicate(arr)
+
+console.log(uniqueArr)
+
+
+
+
+
+
+
+
+
+
 
 
 
