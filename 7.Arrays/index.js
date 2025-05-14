@@ -254,24 +254,85 @@
 
 //How to remove duplicate values from array
 
-var arr = [1, 2, 3, 4, 5, 3, 7, 3]
+// var arr = [1, 2, 3, 4, 5, 3, 7, 3]
 // console.log(arr)
 // var uniqueArr = [...new Set(arr)]
 // console.log(uniqueArr)
 
-var uniqueArr = []
-function removeDuplicate(arr) {
-  console.log(arr)
-  for (var value of arr) {
-    if (uniqueArr.indexOf(value) === -1) {
-      uniqueArr.push(value)
-    }
-  }
-}
+// var uniqueArr = []
+// function removeDuplicate(arr) {
+//   console.log(arr)
+//   for (var value of arr) {
+//     if (uniqueArr.indexOf(value) === -1) {
+//       uniqueArr.push(value)
+//     }
+//   }
+// }
 
-removeDuplicate(arr)
+// removeDuplicate(arr)
 
-console.log(uniqueArr)
+// console.log(uniqueArr)
+
+// sorting
+
+// var arr = ['kohli', 'sachin', 'dhoni']
+// var arr = [4, 6, 2, 9]
+// var arr = [4, 6, 22, 9] 
+var arr = [{course:'nodejs'}, {course:'react'}, {course: 'css'}] 
+
+// var ASO = arr.sort((a,b) => {
+//   return a - b
+// })
+// var DSO = arr.sort((a,b) => {
+//   return b - a
+// })
+// // var DSO = arr.reverse()
+// // console.log(ASO)
+// console.log(DSO)
+
+// var res = arr.sort((a, b) => {
+//   if (a.course > b.course) return -1
+//   if(a.course < b.course) return 1
+// })
+
+// console.log(res)
+
+// for (var i = 0; i < arr.length; i++){
+//   console.log(i)
+//   for (var j = i + 1; j < arr.length; j++){
+//     console.log(j)
+//     if (arr[i].course > arr[j].course) {
+//       var temp = arr[i]
+//       arr[i] = arr[j]
+//       arr[j] = temp
+//     }
+//   }
+// }
+
+// console.log(arr)
+
+
+// Array.from
+
+// function test() {
+//   console.log(arguments)
+//   console.log(typeof arguments)
+//   console.log(Array.isArray(arguments))
+
+//   var res = Array.from(arguments)
+//   console.log(res, Array.isArray(res))
+
+// }
+
+// test(1,2,3,4,5)
+
+
+
+
+
+
+
+
 
 
 
