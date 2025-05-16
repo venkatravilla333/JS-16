@@ -94,7 +94,7 @@
 
 //Adding
 
-// api 
+// api
 
 // var text = 'This is para'
 
@@ -139,5 +139,28 @@
 //delete
 
 // parent.removeChild(para)
+
+
+//How to attach events to dom elements
+
+// var btn = document.getElementById('btn')
+// console.log(btn)
+
+// var para = document.createElement('p')
+
+// para.id = 'mypara'
+
+// para.innerText = 'This is my para'
+
+// var body = document.getElementById('body')
+
+// function clickBtn() {
+//   console.log('hi')
+//   body.appendChild(para)
+// }
+
+// btn.addEventListener('click', clickBtn)
+
+//Event handling
 
 
