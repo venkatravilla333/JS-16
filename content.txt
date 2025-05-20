@@ -1954,7 +1954,7 @@ example:
    3) async and await
    ------------------
 
-    - Async and await are built on promises. The keyword “async” accompanies the function,                     indicating that it returns a promise. 
+    - Async and await are built on promises. The keyword “async” accompanies the function, indicating that it returns a promise. 
     - Within this function, the await keyword is applied to the promise being returned. 
     - The await keyword ensures that the function waits for the promise to resolve.
 
