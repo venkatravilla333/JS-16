@@ -24,8 +24,10 @@
 // x.push(1)
 // console.log(x)
 
-var x = 'sachin'
+// var x = 'sachin'
 
-x.min()
+// x.min()
+
+
 
 
