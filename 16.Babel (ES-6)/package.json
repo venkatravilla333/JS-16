@@ -1,0 +1,17 @@
+{
+  "name": "16.babel-(es-6)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel --presets env index.js -o build/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
+  }
+}
