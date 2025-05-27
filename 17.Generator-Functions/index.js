@@ -17,6 +17,11 @@
 // }
 
 // var genObj = genFun()
+// console.log(genObj)
 // console.log(genObj.next())
 // console.log(genObj.next())
 // console.log(genObj.next())
+
+// for (var value of genObj) {
+//   console.log(value)
+// }
