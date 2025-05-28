@@ -95,10 +95,12 @@ var docFun = () => {
 
 docBtn.addEventListener('click', docFun)
 
-var forwardBtn = document.getElementById('forward')
+// var forwardBtn = document.getElementById('forward')
 
-var forwardFun = () => {
-  window.history.forward()
-}
+// var forwardFun = () => {
+//   window.history.forward()
+// }
 
-forwardBtn.addEventListener('click', forwardFun)
+// forwardBtn.addEventListener('click', forwardFun)
+
+
